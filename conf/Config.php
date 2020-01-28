@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Class Config
+ * houses all configurations
+ */
 class Config
 {
 

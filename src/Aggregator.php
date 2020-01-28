@@ -2,6 +2,10 @@
 
 require_once "Astaan.php";
 
+/**
+ * Class Aggregator
+ * core class for processing all services
+ */
 class Aggregator
 {
 

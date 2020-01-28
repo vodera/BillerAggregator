@@ -3,6 +3,10 @@
 require_once "utils/Utils.php";
 require_once "conf/Config.php";
 
+/**
+ * Class Astaan
+ * has all Astaan functions for processing Astaan requests
+ */
 class Astaan
 {
 

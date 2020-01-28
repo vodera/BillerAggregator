@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * This is the entry point
+ */
 require_once "src/Aggregator.php";
 require_once "conf/Config.php";
 
