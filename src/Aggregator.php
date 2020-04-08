@@ -63,7 +63,20 @@ class Aggregator
                         $response['description'] = 'Payment processing failed';
                     }
                     break;
-                case "OPENTEMBO":
+                case "OPENTEMBO_ENQUIRY":
+                    $result = $this->openTembo->postEnquiry($request);
+                    if ($result) {
+                        $response = self::$RESPONSE;
+                        $response['statusCode'] = Config::SUCCESS;
+                        $response['description'] = 'Payment processed successfully';
+                        $response['extraData'] = $result;
+                    } else {
+                        $response = self::$RESPONSE;
+                        $response['statusCode'] = Config::FAILED;
+                        $response['description'] = 'Payment processing failed';
+                    }
+                    break;
+                case "OPENTEMBO_PAY":
                     $result = $this->openTembo->postPay($request);
                     if ($result) {
                         $response = self::$RESPONSE;
