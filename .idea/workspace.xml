@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f3b11d9-2d76-4e4a-9afe-a2c4f81b2f7c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/OpenTembo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/conf/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/conf/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Aggregator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aggregator.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Astaan.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Astaan.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -66,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1580200003441</updated>
       <workItem from="1580200007368" duration="9599000" />
+      <workItem from="1586351841891" duration="4937000" />
     </task>
     <servers />
   </component>
@@ -73,17 +73,27 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="486" y="308" key="NewPhpFileDialog" timestamp="1580204710583">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1586357183599">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586357183599" />
+    <state x="716" y="417" key="NewPhpFileDialog" timestamp="1586354578695">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="486" y="308" key="NewPhpFileDialog/0.0.1304.768@0.0.1304.768" timestamp="1580204710583" />
+    <state x="716" y="417" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586354578695" />
+    <state x="604" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586357233716">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="604" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1586357233716" />
     <state x="348" y="116" width="607" height="536" key="find.popup" timestamp="1580204766904">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="348" y="116" width="607" height="536" key="find.popup/0.0.1304.768@0.0.1304.768" timestamp="1580204766904" />
-    <state x="308" y="172" key="run.anything.popup" timestamp="1580203859247">
-      <screen x="0" y="0" width="1304" height="768" />
+    <state x="453" y="233" key="run.anything.popup" timestamp="1586354824300">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="308" y="172" key="run.anything.popup/0.0.1304.768@0.0.1304.768" timestamp="1580203859247" />
+    <state x="453" y="233" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586354824300" />
   </component>
 </project>

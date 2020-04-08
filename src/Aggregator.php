@@ -1,6 +1,7 @@
 <?php
 
 require_once "Astaan.php";
+require_once "OpenTembo.php";
 
 /**
  * Class Aggregator
@@ -17,11 +18,13 @@ class Aggregator
 
     private $astaan;
     private $utils;
+    private $openTembo;
 
 
     public function __construct()
     {
         $this->astaan = new Astaan();
+        $this->openTembo = new OpenTembo();
         $this->utils = new Utils();
     }
 
@@ -50,6 +53,18 @@ class Aggregator
             switch ($request['serviceCode']) {
                 case "ASTAAN_PAY":
                     $result = $this->astaan->postPay($request);
+                    if ($result) {
+                        $response = self::$RESPONSE;
+                        $response['statusCode'] = Config::SUCCESS;
+                        $response['description'] = 'Payment processed successfully';
+                    } else {
+                        $response = self::$RESPONSE;
+                        $response['statusCode'] = Config::FAILED;
+                        $response['description'] = 'Payment processing failed';
+                    }
+                    break;
+                case "OPENTEMBO":
+                    $result = $this->openTembo->postPay($request);
                     if ($result) {
                         $response = self::$RESPONSE;
                         $response['statusCode'] = Config::SUCCESS;

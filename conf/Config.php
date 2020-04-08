@@ -65,4 +65,38 @@ class Config
      * Astaan URL
      */
     const ASTAAN_URL = "http://easypay.astaanmedia.com/servicerecharge.asmX";
+
+    /**
+     * @var integer
+     * connect timeout in Seconds
+     */
+    const CONNECT_TIMEOUT = 5;
+
+    /**
+     * @var integer
+     * read timeout in Seconds
+     */
+    const READ_TIMEOUT = 30;
+    /**
+     * @var string
+     * Open Tembo API username
+     */
+    const OPENTEMBO_USERNAME = "api@opentembo.io";
+
+    /**
+     * @var string
+     * Open Tembo password
+     */
+    const OPENTEMBO_PASSWORD = "123456";
+
+    /**
+     * @var string
+     * Authentication URL
+     */
+    const OPENTEMBO_AUTH_URL = "https://demo.opentembo.io/simba/api/v1/gateway/authenticate";
+
+    const OPENTEMBO_POST_PAYMENT = "https://demo.opentembo.io/simba/api/v1/gateway/postReceipt";
+
+    const OPENTEMBO_BS_SHORTCODE = "223311";
+
 }
