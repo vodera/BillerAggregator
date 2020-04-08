@@ -97,6 +97,8 @@ class Config
 
     const OPENTEMBO_POST_PAYMENT = "https://demo.opentembo.io/simba/api/v1/gateway/postReceipt";
 
+    const OPENTEMBO_ENQUIRY = "https://demo.opentembo.io/simba/api/v1/gateway/accountInquiry";
+
     const OPENTEMBO_BS_SHORTCODE = "223311";
 
 }

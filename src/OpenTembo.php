@@ -18,6 +18,40 @@ class OpenTembo
         $this->utils = new Utils();
     }
 
+
+    public function postEnquiry($payload){
+
+        $token = $this->getToken();
+        if (empty($token)) {
+            $this->utils->logMessage(Config::ERROR, $payload['accountNumber'],
+                "fetch Token failed on enquiry");
+            return false;
+        }
+
+        $payload = array(
+            'billRefNumber' => $payload['accountNumber'],
+            'authToken' => $token,
+            'businessShortCode' => Config::OPENTEMBO_BS_SHORTCODE
+        );
+
+        //send request
+        $response = $this->post(Config::OPENTEMBO_ENQUIRY, $payload);
+
+        $this->utils->logMessage(Config::INFO, $payload['accountNumber'],
+            "post enquiry response | " . print_r($response, true));
+
+        if (empty($response)) {
+            $this->utils->logMessage(Config::ERROR, $payload['accountNumber'],
+                "post enquiry failed");
+            return false;
+        }
+        $response = json_decode($response, true);
+        if (isset($response['error']) && $response['error'] == false) {
+            return $response;
+        }
+        return false;
+
+    }
     /**
      * @param $payload
      * @return bool
@@ -27,9 +61,9 @@ class OpenTembo
     {
         $token = $this->getToken();
         if (empty($token)) {
-            $this->utils->logMessage(Config::ERROR, "OpenTembo",
+            $this->utils->logMessage(Config::ERROR, $payload['accountNumber'],
                 "fetch Token failed");
-
+            return false;
         }
 
         $date = date("dmYHis");
@@ -47,11 +81,11 @@ class OpenTembo
         //send request
         $response = $this->post(Config::OPENTEMBO_POST_PAYMENT, $payload);
 
-        $this->utils->logMessage(Config::INFO, "OpenTembo",
+        $this->utils->logMessage(Config::INFO, $payload['accountNumber'],
             "post payment response | " . print_r($response, true));
 
         if (empty($response)) {
-            $this->utils->logMessage(Config::ERROR, "OpenTembo",
+            $this->utils->logMessage(Config::ERROR, $payload['accountNumber'],
                 "post payment failed");
             return false;
         }
