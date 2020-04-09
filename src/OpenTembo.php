@@ -33,6 +33,8 @@ class OpenTembo
             'authToken' => $token,
             'businessShortCode' => Config::OPENTEMBO_BS_SHORTCODE
         );
+        $this->utils->logMessage(Config::INFO, $payload['accountNumber'],
+            "sending enquiry request | " . json_encode($payload));
 
         //send request
         $response = $this->post(Config::OPENTEMBO_ENQUIRY, $payload);
@@ -66,7 +68,7 @@ class OpenTembo
             return false;
         }
 
-        $date = date("dmYHis");
+        $date = date("YHis");
         $payload = array(
             'billRefNumber' => $payload['accountNumber'],
             'authToken' => $token,
@@ -77,6 +79,8 @@ class OpenTembo
             'msisdn' => $payload['msisdn'],
             'name' => $payload['customerName']
         );
+        $this->utils->logMessage(Config::INFO, $payload['accountNumber'],
+            "sending post payment request | " . json_encode($payload));
 
         //send request
         $response = $this->post(Config::OPENTEMBO_POST_PAYMENT, $payload);
@@ -104,6 +108,8 @@ class OpenTembo
                 'username' => Config::OPENTEMBO_USERNAME,
                 'password' => Config::OPENTEMBO_PASSWORD
             );
+            $this->utils->logMessage(Config::INFO, $payload['accountNumber'],
+                "sending get token request | " . json_encode($payload));
 
             //send request
             $response = $this->post(Config::OPENTEMBO_AUTH_URL, $payload);

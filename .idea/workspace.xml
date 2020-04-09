@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6f3b11d9-2d76-4e4a-9afe-a2c4f81b2f7c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/Config.php" beforeDir="false" afterPath="$PROJECT_DIR$/conf/Config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Aggregator.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aggregator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OpenTembo.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/OpenTembo.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +63,16 @@
       <option name="presentableId" value="Default" />
       <updated>1580200003441</updated>
       <workItem from="1580200007368" duration="9599000" />
-      <workItem from="1586351841891" duration="5924000" />
+      <workItem from="1586351841891" duration="7063000" />
     </task>
+    <task id="LOCAL-00001" summary="add OpenTembo enquiry">
+      <created>1586359886317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586359886318</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,7 +80,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add OpenTembo biller" />
-    <option name="LAST_COMMIT_MESSAGE" value="add OpenTembo biller" />
+    <MESSAGE value="add OpenTembo enquiry" />
+    <option name="LAST_COMMIT_MESSAGE" value="add OpenTembo enquiry" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1586357183599">
@@ -90,10 +97,10 @@
     </state>
     <state x="486" y="308" key="NewPhpFileDialog/0.0.1304.768@0.0.1304.768" timestamp="1580204710583" />
     <state x="716" y="417" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586354578695" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586359338046">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1586359910724">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586359338046" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1586359910724" />
     <state x="604" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586357233716">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
