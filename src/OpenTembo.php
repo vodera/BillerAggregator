@@ -68,7 +68,7 @@ class OpenTembo
             return false;
         }
 
-        $date = date("YHis");
+        $date = date("His");
         $payload = array(
             'billRefNumber' => $payload['accountNumber'],
             'authToken' => $token,
